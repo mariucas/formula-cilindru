@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>cilindru</title>
+    <style type="text/css">
+ 
+        form{width:250px; background:#2DAC2D;}
+     
+        </style>
+        
+        <script type="text/javascript">
+        
+        function cylinder()
+        {
+                var r=document.forms.formFormula.text1.value;
+                var h=document.forms.formFormula.text2.value;
+                document.forms.formFormula.text3.value=Math.PI*r*r*h;
+                return;
+        }
+    
+        </script>
+      </head>
+      <body>
+          <form name="formFormula">
+          <input type="text" name="text1" value=0 size=10>Radius
+          <br>
+          <input type="text" name="text2" value=0 size=10>Height
+          <br><br>
+          <input type="button" name="butCil" value="Cilinder Volume" onClick="cylinder();">
+          <input type="text" name="text3" value=0 size=10>
+          <br>      
+          </form>
+      </body>
+    </html>
